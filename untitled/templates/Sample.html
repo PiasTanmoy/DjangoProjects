@@ -1,0 +1,370 @@
+
+<html>
+
+
+<head>
+    <title>Web Design</title>
+
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" type="text/css" href="button3.css">
+</head>
+
+<body>
+<hr>
+<h1>HTML tags</h1>
+<hr>
+
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<h7>Heading 7</h7>
+<h8>Heading 8</h8>
+
+<p>My first paragraph.</p>
+
+
+<hr>
+<h1>Input Type</h1>
+<hr>
+
+
+<button type="button"> Button </button> <br>
+<textarea minlength="10" maxlength="200" placeholder="Text Area"></textarea> <br>
+<select name="form_example">
+	<option value="Option1">Option 1
+	<option value="Option2">Option 2
+	<option value="Option3">Option 3
+</select>
+<br>
+<select name="form_example" size="3">
+	<option value="Option1">Option 1
+	<option value="Option2">Option 2
+	<option value="Option3">Option 3
+	<option value="Option4">Option 4
+	<option value="Option5">Option 5
+</select>
+<br>
+<label>
+Who's your favorite cartoon character?
+<input name="favCharacter" list="characters" maxlength="50">
+  <datalist id="characters">
+    <option value="Tom and Jerry">
+    <option value="Batman">
+    <option value="Bugs">
+  </datalist>
+</label>
+<br>
+
+<fieldset>
+  <legend>Name Details</legend>
+  <p>First Name: <input type="text"> Surname: <input type="text"></p>
+  <p>Preferred Name: <input type="text"></p>
+</fieldset>
+
+<fieldset>
+<legend>Gender</legend>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+</fieldset>
+
+<br>
+
+Downloading now. Progress...
+<progress value="250" max="1000">
+<span>25</span>%
+</progress>
+<br>
+
+<p>Disk Space Used: <meter optimum="40" high="80" max="100" value="85">85%</meter></p>
+
+<br>
+<label>
+  First Name:
+  <input type="text" name="first_name" placeholder="Enter your first name">
+</label>
+<br>
+
+<label>
+  Pick a color:
+  <input type="color">
+</label>
+
+<br>
+
+<label>
+  Enter a number:
+  <input type="number">
+</label>
+<br>
+
+<label>
+  Choose a range:
+  <input type="range">
+</label>
+
+<br>
+
+<label>
+  Pick a date:
+  <input type="date">
+</label>
+
+<br>
+
+<label>
+  Password:
+  <input type="password">
+</label>
+
+<br>
+
+<label>
+  Month:
+  <input type="month">
+</label>
+
+<br>
+
+<label>
+  Week:
+  <input type="week">
+</label>
+
+<br>
+
+<label>
+  Time:
+  <input type="time">
+</label>
+
+<br>
+
+<label>
+  <input type="checkbox" name="checkbox_example" value="Option1"> Option 1
+</label>
+<label>
+  <input type="checkbox" name="checkbox_example" value="Option2"> Option 2
+</label>
+<label>
+  <input type="checkbox" name="checkbox_example" value="Option3"> Option 3
+</label>
+
+<br>
+<label>
+  <input type="radio" name="radio_button_example" value="Option1"> Option 1
+</label>
+<label>
+  <input type="radio" name="radio_button_example" value="Option2"> Option 2
+</label>
+<label>
+  <input type="radio" name="radio_button_example" value="Option3"> Option 3
+</label>
+
+<br>
+
+<label>
+  File to upload:
+  <input type="file">
+</label>
+
+<br>
+
+<input type="submit" value="Go for it!">
+
+<br>
+
+<form>
+  <input name="firstName" placeholder="First Name">
+  <input name="firstName" placeholder="Last Name">
+  <input type="reset" value="Reset">
+</form>
+
+<br>
+
+<br>
+<h1>Example form</h1>
+<form method="get" action="google.com">
+  <p>
+    <label>Name
+      <input type="text" name="customer_name" required>
+    </label>
+  </p>
+
+  <p>
+    <label>Phone
+      <input type="tel" name="phone_number">
+    </label>
+  </p>
+
+  <p>
+    <label>Email
+      <input type="email" name="email_address">
+    </label>
+  </p>
+
+  <fieldset>
+    <legend>Which taxi do you require?</legend>
+    <p><label> <input type="radio" name="taxi" required value="car"> Car </label></p>
+    <p><label> <input type="radio" name="taxi" required value="van"> Van </label></p>
+    <p><label> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Extras</legend>
+    <p><label> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
+    <p><label> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
+  </fieldset>
+
+  <p>
+    <label>Pickup Date/Time
+      <input type="datetime-local" name="pickup_time" required>
+    </label>
+  </p>
+
+  <p>
+    <label>Pickup Place
+      <select id="pickup_place" name="pickup_place">
+        <option value="" selected="selected">Select One</option>
+        <option value="office" >Taxi Office</option>
+        <option value="town_hall" >Town Hall</option>
+        <option value="telepathy" >We'll Guess!</option>
+      </select>
+    </label>
+  </p>
+
+  <p>
+    <label>Dropoff Place
+      <input type="text" name="dropoff_place" required list="destinations">
+    </label>
+
+    <datalist id="destinations">
+      <option value="Airport">
+      <option value="Beach">
+      <option value="Fred Flinstone's House">
+    </datalist>
+  </p>
+
+  <p>
+    <label>Special Instructions
+      <textarea name="comments" maxlength="500"></textarea>
+    </label>
+  </p>
+
+  <p><button>Submit Booking</button></p>
+
+</form>
+
+<hr>
+
+<h1>Example form with CSS</h1>
+<form class="myForm" method="get" action="">
+  <p>
+    <label>Name
+      <input type="text" name="customer_name" required>
+    </label>
+  </p>
+
+  <p>
+    <label>Phone
+      <input type="tel" name="phone_number">
+    </label>
+  </p>
+
+  <p>
+    <label>Email
+      <input type="email" name="email_address">
+    </label>
+  </p>
+
+  <fieldset>
+    <legend>Which taxi do you require?</legend>
+    <p><label> <input type="radio" name="taxi" required value="car"> Car </label></p>
+    <p><label> <input type="radio" name="taxi" required value="van"> Van </label></p>
+    <p><label> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Extras</legend>
+    <p><label> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
+    <p><label> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
+  </fieldset>
+
+  <p>
+    <label>Pickup Date/Time
+      <input type="datetime-local" name="pickup_time" required>
+    </label>
+  </p>
+
+  <p>
+    <label>Pickup Place
+      <select id="pickup_place" name="pickup_place">
+        <option value="" selected="selected">Select One</option>
+        <option value="office" >Taxi Office</option>
+        <option value="town_hall" >Town Hall</option>
+        <option value="telepathy" >We'll Guess!</option>
+      </select>
+    </label>
+  </p>
+
+  <p>
+    <label>Dropoff Place
+      <input type="text" name="dropoff_place" required list="destinations">
+    </label>
+
+    <datalist id="destinations">
+      <option value="Airport">
+      <option value="Beach">
+      <option value="Fred Flinstone's House">
+    </datalist>
+  </p>
+
+  <p>
+    <label>Special Instructions
+      <textarea name="comments" maxlength="500"></textarea>
+    </label>
+  </p>
+
+  <p><button>Submit Booking</button></p>
+
+</form>
+
+<hr>
+
+<h1>Example Log in  </h1>
+<form class="myForm" method="get" action="home2.html">
+
+  <p>
+    <label>Email
+      <input type="email" name="user_email" required>
+    </label>
+
+    <label>Password
+      <input type="password" name="user_pwd" required>
+    </label>
+
+    <button>Log In</button>
+  </p>
+
+  <p>
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </p>
+
+</form>
+
+<button class="button" value="CSS Button"> CSS Button </button>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<button class="disabled" value="CSS Button"> CSS Button </button>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
