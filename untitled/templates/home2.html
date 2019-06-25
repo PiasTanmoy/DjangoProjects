@@ -6,6 +6,23 @@
 </head>
 <body>
 
+<script>
+    document.write("Hello world by JS")
+    alert("Hey man! What's up?")
+
+</script>
+
+<button onclick="changeText();">Click me!</button>
+<input id="textbox" type="text" />
+
+<script>
+    function changeText() {
+	var textBox = document.getElementById("textbox");
+	 textbox.style.color = "red";
+
+    }
+</script>
+
 <h1>This is home 2</h1>
 
 </body>
